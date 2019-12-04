@@ -8,4 +8,5 @@ The final project of this course was to make a prototype of our website. <br />
 <br />
 To view the preliminary site we made, please download the unite zip folder. In a command line (instructions for Window's command prompt), 
 go into the prototype folder inside the unite folder. Type the following: python manage.py runserver <br />
-Copy and paste the url given into a web browser to view the prototype website.
+Copy and paste the url given into a web browser to view the prototype website. <br />
+Alternatively, you may also view this <a href="https://docs.google.com/presentation/d/1fGTa7eXABzLIhVRP_MiO0N6NtwHj_ANcqGbIsWIQ2v8/edit#slide=id.g529b90106d_0_0">google slides presentation</a> that includes a video of the functions of the prototype website.
