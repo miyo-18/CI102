@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% block head %}
+    <title>Home</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">Welcome to U-Nite, a platform upon which students in the Philadelphia area can meet others, buy and sell furniture and other goods, and interact on Q/A forums.</p>
+      </div>
+      {% if not user.is_authenticated %}
+      <div class="container">
+        <button class="btn btn-primary btn-lg" href="/login" type="submit" name="loginbutton">Login</button>
+        <button class="btn btn-primary btn-lg" href="/register" type="submit" name="signupbutton">Sign Up</button>
+      </div>
+      {% endif %}
+    </div>
+    {% endblock %}
+  </body>
+</html>

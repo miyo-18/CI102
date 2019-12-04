@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  {% block head %}
+  <script>
+  function addPost() {
+    document.getElementById('contents').value = document.getElementById('postContents').value;
+  }
+  </script>
+  {% endblock %}
+</head>
+  <body>
+    {% block body %}
+    <div class="container">
+      <h1>Create a Post:</h1>
+      <div>
+          <textarea name="PostContent" rows="20" cols="80" placeholder="Enter post here" id = "postContents"></textarea>
+          <button class="btn btn-primary btn-lg" type="btn" onclick='addPost()'>Submit</button>
+      </div>
+      <p id='contents'></p>
+    </div>
+    {% endblock %}
+  </body>
+</html>

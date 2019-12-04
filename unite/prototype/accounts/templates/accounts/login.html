@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% block head %}
+    <title>Login</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    <br></br>
+    <div class="container">
+        <form method="POST">
+          {% csrf_token %}
+          {{form}}
+          <p>If you don't already have an account, <a href="/register"><strong>register</strong></a></p>
+          <button class="btn btn-primary btn-sm" type="submit" name="loginbutton">Login</button>
+        </form>
+        <br></br>
+    </div>
+    {% endblock %}
+  </body>
+</html>
